@@ -1,0 +1,172 @@
+<!doctype html>
+<html dir="rtl" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TE-Courses | Login</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="sign_in/css/bootstrap.min.css">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="sign_in/css/style.css">
+</head>
+
+<body>
+    
+    <div id="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+    </div>
+    
+    <section style="background-image: url(sign_in/img/bg.svg);"  class="fxt-template-animation login">
+      
+        <div class="fxt-content-wrap">
+            <a href="#" class="fxt-logo"><img width="200" src="img/logo.png" alt="Logo"></a>
+            <h1 class="fxt-main-title"> قم بتسجيل الدخول او انشاء حساب او استعاده كلمه السر </h1>
+            <p class="fxt-main-description"> من خلال الضغط علي الزر المناسب </p>
+            <div class="fxt-btns-wrap">
+                <ul>
+                    <li>
+                        <button type="button" class="fxt-modal-btn" data-bs-toggle="modal" data-bs-target="#logIn"> تسجيل الدخول </button>
+                    </li>
+                    <li>
+                        <button type="button" class="fxt-modal-btn" data-bs-toggle="modal" data-bs-target="#signUp"> انشاء حساب </button>
+                    </li>
+                    <li>
+                        <button type="button" class="fxt-modal-btn" data-bs-toggle="modal" data-bs-target="#forgot"> استعاده كلمه السر </button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="logIn" role="dialog" aria-hidden="true">
+            <div class="courses-login modal-dialog modal-dialog-centered" role="document">
+                <div class="courses-login modal-content">
+                    <button type="button" class="fxt-btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="fxt-page-title-wrap">
+                        <h2 class="fxt-page-title"> تسجيل الدخول </h2>
+                    </div>
+                    <div class="fxt-form">
+                        <form method="POST">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" name="email" placeholder=" ادخل الايميل ">
+                            </div>
+                            <div class="form-group">
+                                <input id="password" type="password" class="form-control" name="password" placeholder=" ادخل كلمه السر " >
+                            </div>
+                            <div class="form-group text-center">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#forgot" class="fxt-switcher-text1"> هل نسيت كلمه السر ؟ </a>
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-4">
+                                    <button type="submit" class="fxt-btn-fill"><a href="index.html" style="color: white;">تسجيل الدخول </a> </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="fxt-option-text"> او </div>
+                        <div class="fxt-login-option">
+                            <ul>
+                                <li class="fxt-facebook">
+                                    <a href="#"><i class="mr-3 fab fa-facebook-f"></i> التسجيل عبر الفيسبوك </a>
+                                </li>
+                                <li class="fxt-google">
+                                    <a href="#"><i class="mr-3 fab fa-google"></i> التسجيل عبر جوجل </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fxt-switcher-description"> الم تمتلك حساب ؟ <a href="" data-bs-toggle="modal" data-bs-target="#signUp" class="fxt-switcher-text2 ms-1"> انشاء حساب </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signUp" role="dialog" aria-hidden="true">
+            <div class="courses-login modal-dialog modal-dialog-centered" role="document">
+                <div class="courses-login modal-content">
+                    <button type="button" class="fxt-btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="fxt-page-title-wrap">
+                        <h2 class="fxt-page-title"> انشاء حساب </h2>
+                    </div>
+                    <div class="fxt-form">
+                        <form method="POST">
+                            <div class="form-group">
+                                <input type="text" id="sign_up_name" class="form-control" name="sign_up_name" placeholder=" ادخل الاسم " required="required">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="sign_up_email" class="form-control" name="sign_up_email" placeholder=" ادخل الايميل " required="required">
+                            </div>
+                            <div class="form-group">
+                                <input id="sign_up_password" type="password" class="form-control" name="sign_up_password" placeholder=" ادخل كلمه السر " required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-4">
+                                    <button type="submit" class="fxt-btn-fill"> انشاء حساب </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="fxt-option-text"> او </div>
+                        <div class="fxt-login-option">
+                            <ul>
+                                <li class="fxt-facebook">
+                                    <a href="#"><i class="mr-3 fab fa-facebook-f"></i> انشاء حساب عن طريق الفيسبوك </a>
+                                </li>
+                                <li class="fxt-google">
+                                    <a href="#"><i class="mr-3 fab fa-google"></i> انشاء حساب عن طريق جوجل  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fxt-switcher-description"> هل لديك حساب ؟ <a href="" data-bs-toggle="modal" data-bs-target="#logIn" class="fxt-switcher-text2 ms-1"> تسجيل الدخول </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="forgot" role="dialog" aria-hidden="true">
+            <div class="courses-login modal-dialog modal-dialog-centered" role="document">
+                <div class="courses-login modal-content">
+                    <button type="button" class="fxt-btn-close" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="fxt-page-title-wrap">
+                        <h2 class="fxt-page-title"> استعاده كلمه السر </h2>
+                    </div>
+                    <div class="fxt-form">
+                        <p class="fxt-page-description">
+                           أدخل عنوان البريد الإلكتروني المرتبط بحسابك. وسوف نرسل لك رابط.
+                        </p>
+                        <form method="POST">
+                            <div class="form-group">
+                                <input type="email" id="forgot_email" class="form-control" name="forgot_email" placeholder=" ادخل الايميل او رقم الهاتف " required="required">
+                            </div>
+                            <div class="form-group">
+                                <div class="fxt-transformY-50 fxt-transition-delay-4">
+                                    <button type="submit" class="fxt-btn-fill"> استعاده الان </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="fxt-switcher-description"> الرجوع الي <a href="" data-bs-toggle="modal" data-bs-target="#logIn" class="fxt-switcher-text2 ms-1"> التسجيل </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+   
+    <!-- jquery-->
+    <script src="sign_in/js/jquery-3.5.0.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="sign_in/js/bootstrap.min.js"></script>
+    <!-- Imagesloaded js -->
+    <script src="sign_in/js/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="sign_in/js/main.js"></script>
+
+</body>
+
+</html>
